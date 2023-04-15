@@ -14,7 +14,7 @@ hamburgerMenu.addEventListener('click', () =>{
 // maskエリアをクリックした時にメニューを閉じる
 navi.addEventListener('click', () => {
   hamburgerMenu.classList.toggle('active');
-  navi.classList.toggle('active');
+  // navi.classList.toggle('active');
   main_title.classList.toggle('active');
 });
 
