@@ -77,7 +77,6 @@ li {
     font-size: 7rem;
     margin-bottom: 30px;
     padding: 0 15px;
-    z-index: 3;
     }
   .jp-title {
     font-size: 4rem;
@@ -243,7 +242,7 @@ li {
 
 
 /* SP版 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .top-content .en-title {
     font-size: 3.5rem;
     margin-bottom: 60px;
