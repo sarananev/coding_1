@@ -79,7 +79,7 @@ a {
 }
 
 /* header_SP版 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #header {
     padding: 19px 15px;
   }  
