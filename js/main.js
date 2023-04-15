@@ -44,7 +44,5 @@ window.addEventListener('DOMContentLoaded', () => {
   observer.observe(Intersect);
 });
 
-// radioボタンのチェックを外す
-
 
 
