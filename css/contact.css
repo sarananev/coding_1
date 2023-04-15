@@ -93,7 +93,7 @@ a {
     color: #fff;
     background: #282F35;
     opacity: 0;
-    z-index: 5;
+    /* z-index: 5; */
     transition: all 0.3s;
   }
   #navi li {
@@ -230,6 +230,8 @@ a {
 /* form */
 .form-wrapper {
   margin: 0 auto 80px;
+  position: relative;
+  z-index: 3;
 }
 .form-list {
   max-width: 700px;
