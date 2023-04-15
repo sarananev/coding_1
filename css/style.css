@@ -34,6 +34,7 @@
 #navi li a {
   letter-spacing: 0.1em;
   font-style: italic;
+  font-weight: bold;
 }
 
 .hamberger-memu {
@@ -41,7 +42,7 @@
 }
 
 /* header_SP版 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #header {
     padding: 19px 15px;
   }
@@ -69,7 +70,7 @@
     z-index: 20;
     text-align: center;
     transition: all 0.5s;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   .hamberger-memu {
     width: 30px;
