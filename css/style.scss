@@ -16,7 +16,7 @@ body {
 }
 
 .wrapper {
-  // max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 100px 0 70px;
   position: relative;
@@ -115,7 +115,7 @@ li {
   }
 }
 
-.button {
+.button a {
   width: 235px;
   line-height: 60px;
   background: #F7D43F;
@@ -125,11 +125,8 @@ li {
   display: block;
   margin: 0 auto 70px;
   transition: 0.3s;
-  a {
-    text-align: center;
-    font-weight: bold;
-    color: #171717;
-  }
+  font-weight: bold;
+  color: #171717;
 }
 .button:hover {
   opacity: 0.7;
@@ -144,14 +141,14 @@ li {
 }
 
 // Works
-#works {
+.works-bg {
   background-image: url('../img/works-bgi@2x.jpg');
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
   padding: 100px 0 70px;
-
-
+}
+#works {
+  margin: 0 auto;
   .second-title {
     text-align: end;
     color: #fff;
@@ -181,11 +178,15 @@ li {
 
 
 // Service
+.service-wrapper {
+  padding: 100px 0 70px;
+}
 .servis-img {
   display: flex;
   align-items: center;
   .service-content {
     width: 33.3%;
+    background-size: 100%;
     a {
       display: block;
       width: 100%;
@@ -245,7 +246,7 @@ li {
 /* SP版 */
 @media screen and (max-width: 768px) {
   .top-content .en-title {
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     margin-bottom: 60px;
     }
     .top-content .jp-title {
@@ -350,8 +351,13 @@ li {
   }
 }
 
-
-  
+@media screen and (max-width: 375px) {
+  .top-content .en-title {
+    font-size: 3.4rem;
+    margin-bottom: 60px;
+    line-height: 0;
+    }
+}  
 
 
 

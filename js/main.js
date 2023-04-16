@@ -13,8 +13,8 @@ hamburgerMenu.addEventListener('click', () =>{
 
 // maskエリアをクリックした時にメニューを閉じる
 navi.addEventListener('click', () => {
-  hamburgerMenu.classList.toggle('active');
-  navi.classList.toggle('active');
+  hamburgerMenu.classList.remove('active');
+  navi.classList.remove('active');
   main_title.classList.toggle('active');
 });
 
