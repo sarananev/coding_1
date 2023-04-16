@@ -42,15 +42,15 @@
             <label for="" class="form-label">お問い合わせ内容</label>
             <ul class="checkbox-list">
               <li class="checkbox-item">
-                <input id="document" type="checkbox" class="checkbox">
+                <input name="checkbox" id="document" type="checkbox" class="checkbox" onclick="deleteChecked(this, 1)">
                 <label for="document">資料請求</label>
               </li>
               <li class="checkbox-item">
-                <input id="phone" type="checkbox" class="checkbox">
+                <input name="checkbox" id="phone" type="checkbox" class="checkbox" onclick="deleteChecked(this, 2)">
                 <label for="phone">お電話でのご相談を希望</label>
               </li>
               <li class="checkbox-item">
-                <input id="application" type="checkbox" class="checkbox">
+                <input name="checkbox" id="application" type="checkbox" class="checkbox" onclick="deleteChecked(this, 3)">
                 <label for="application">申し込み</label>
               </li>
             </ul>
@@ -62,11 +62,11 @@
           </li>
           <li class="form-item">
             <label for="" class="form-label">電話番号</label>
-            <input type="text" class="input-text">
+            <input type="number" class="input-text">
           </li>
           <li class="form-item">
             <label for="" class="form-label">メールアドレス</label>
-            <input type="text" class="input-text">
+            <input type="email" class="input-text">
           </li>
           <li class="form-item">
             <label for="" class="form-label">その他</label>

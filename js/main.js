@@ -44,5 +44,41 @@ window.addEventListener('DOMContentLoaded', () => {
   observer.observe(Intersect);
 });
 
+// チェックボタンを複数選ばないようにする
+window.addEventListener('DOMContentLoaded', () => {
+  new SingleCheck();
+})
 
+ class SingleCheck {
+  constructor(scope) {
+    this.DOM = {};
+    this.DOM.scope = scope ? scope : document;
+    this.DOM.targets = this.DOM.scope.querySelectorAll(".checkbox");
+    this.#addEvent();
+  }
 
+  #singleSelect(el) {
+    const name = el.name;
+    const state = el.checked;
+    const $sameNameEls = this.DOM.scope.querySelectorAll(`[name="${name}"]`);
+
+    $sameNameEls.forEach(el => {
+      el.checked = false;
+    })
+
+    if(state) {
+      el.checked = state;
+    }
+  }
+
+  #addEvent() {
+    const that = this;
+
+    this.DOM.targets.forEach(target => {
+      target.addEventListener('click', (e) => {
+        const el = e.currentTarget;
+        that.#singleSelect(el);
+      })
+    })
+  }
+}
