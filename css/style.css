@@ -205,6 +205,7 @@ li {
 }
 .top-content .main-title {
   max-width: 1000px;
+  min-width: 320px;
   position: absolute;
   bottom: 177px;
   left: 120px;
