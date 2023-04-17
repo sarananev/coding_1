@@ -323,7 +323,7 @@ li {
 }
 .servis-img .service-content {
   width: 33.3%;
-  background-size: 100%;
+  background-size: cover;
 }
 .servis-img .service-content a {
   display: block;

@@ -187,7 +187,8 @@ li {
   align-items: center;
   .service-content {
     width: 33.3%;
-    background-size: 100%;
+    background-size: cover;
+    // object-fit: cover;
     a {
       display: block;
       width: 100%;
